@@ -1,0 +1,7 @@
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\bin\Debug\LabNet2020.exe.config
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\bin\Debug\LabNet2020.exe
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\bin\Debug\LabNet2020.pdb
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\obj\Debug\LabNet2020.csprojAssemblyReference.cache
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\obj\Debug\LabNet2020.csproj.CoreCompileInputs.cache
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\obj\Debug\LabNet2020.exe
+C:\Users\kerne\Desktop\LabNet2020\Ejerccio 1\LabNet2020\obj\Debug\LabNet2020.pdb
