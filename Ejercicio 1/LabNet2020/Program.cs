@@ -22,17 +22,14 @@ namespace LabNet2020
                 }
             }
 
-            for (int i = 0; i <10; i++)
-            {
-                if (i <= 4)
-                {
+            for (int i = 0; i <10; i++){
+                if (i <= 4){
                     Console.WriteLine("Avión {0}: {1} pasajeros.", i+1, ListaTransportes[i].Pasajeros);
-                }
-                else
-                {
+                }else{
                     Console.WriteLine("Automóvil {0}: {1} pasajeros.", i+1, ListaTransportes[i].Pasajeros);
                 }
             }
+
             Console.ReadKey();
         }
     }
