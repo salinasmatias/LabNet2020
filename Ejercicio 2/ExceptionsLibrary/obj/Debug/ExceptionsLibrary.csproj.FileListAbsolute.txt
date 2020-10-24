@@ -1,0 +1,6 @@
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\bin\Debug\ExceptionsLibrary.dll
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\bin\Debug\ExceptionsLibrary.pdb
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\obj\Debug\ExceptionsLibrary.csprojAssemblyReference.cache
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\obj\Debug\ExceptionsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\obj\Debug\ExceptionsLibrary.dll
+C:\Users\kerne\Desktop\LabNet2020\Ejercicio 2\ExceptionsLibrary\obj\Debug\ExceptionsLibrary.pdb
