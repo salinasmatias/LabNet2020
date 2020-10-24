@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LabNet2020
 {
-    class Logic
+    public class Logic
     {
         public void ILoveThrowingExceptions() 
         {

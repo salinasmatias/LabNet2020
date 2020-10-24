@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabNet2020
 {
-    class ExceptionsPractice
+    public class ExceptionsPractice
     {
         public int AttemptToDivideByZero(int number) 
         {
