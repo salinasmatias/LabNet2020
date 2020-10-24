@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabNet2020", "LabNet2020\LabNet2020.csproj", "{EFE002E0-4DEF-487D-906E-5BEF2D9FFE78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFE002E0-4DEF-487D-906E-5BEF2D9FFE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE002E0-4DEF-487D-906E-5BEF2D9FFE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE002E0-4DEF-487D-906E-5BEF2D9FFE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE002E0-4DEF-487D-906E-5BEF2D9FFE78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FCE7A63-85B2-41A1-AAE4-24B1A2961C4B}
+	EndGlobalSection
+EndGlobal
