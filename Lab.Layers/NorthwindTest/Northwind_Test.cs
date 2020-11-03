@@ -34,5 +34,15 @@ namespace NorthwindTest
 
             //Assert is handled by the exception.
         }
+        [TestMethod]
+        public void TestGetAll()
+        {
+            //Arrange
+            ShippersLogic testlogic = new ShippersLogic();
+            List<Shipper> testList = testlogic.GetAll();
+
+            //Assert
+            CollectionAssert.AllItemsAreNotNull(testList);
+        }
     }
 }

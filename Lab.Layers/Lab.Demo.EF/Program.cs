@@ -68,8 +68,9 @@ namespace Lab.Demo.EF
             #endregion
 
             #region Delete
-            var deleteShipper = shippersLogic.GetByID(4);
+            /*var deleteShipper = shippersLogic.GetByID(4);
             shippersLogic.Delete(deleteShipper);
+            */
             #endregion
             Console.ReadKey(true);
         }
