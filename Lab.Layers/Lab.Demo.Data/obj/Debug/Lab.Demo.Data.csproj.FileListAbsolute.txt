@@ -1,0 +1,15 @@
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Data.dll.config
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Data.dll
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Data.pdb
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\EntityFramework.dll
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Entities.dll
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Entities.pdb
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\Lab.Demo.Entities.dll.config
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\EntityFramework.xml
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\obj\Debug\Lab.Demo.Data.csprojAssemblyReference.cache
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\obj\Debug\Lab.Demo.Data.csproj.CoreCompileInputs.cache
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\obj\Debug\Lab.Demo.Data.csproj.CopyComplete
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\obj\Debug\Lab.Demo.Data.dll
+C:\Users\kerne\source\repos\Lab.Layers\Lab.Demo.Data\obj\Debug\Lab.Demo.Data.pdb
