@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace Lab.Demo.Logic
 {
-    public class ShippersLogic:EntityLogic
+    public class ShippersLogic:EntityLogic, ILogic<Shipper>
     {
        
-        public List<Shipper> GetShippersList() 
+        public List<Shipper> GetAll() 
         {
             return this.context.Shippers.ToList();
         }
 
-        public Shipper GetShipperByID(int id) 
+        public Shipper GetByID(int id) 
         {
             try
             {
@@ -31,6 +31,18 @@ namespace Lab.Demo.Logic
             {
                 throw new FormatException("That's not a valid input. Please, try introducing a valid ID.");
             }
+        }
+
+        public void Insert(Shipper Entity)
+        {
+            this.context.Shippers.Add(Entity);
+            this.context.SaveChanges();
+        }
+
+        public void Delete(Shipper Entity)
+        {
+            this.context.Shippers.Remove(Entity);
+            this.context.SaveChanges();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace NorthwindTest
             ShippersLogic testLogic = new ShippersLogic();
 
             //Act
-            var shipper = testLogic.GetShipperByID(4);
+            var shipper = testLogic.GetByID(4);
 
             //Assert is handled by the exception.
         }
@@ -30,7 +30,7 @@ namespace NorthwindTest
             ShippersLogic testLogic = new ShippersLogic();
 
             //Act
-            var shipper = testLogic.GetShipperByID(int.Parse("a"));
+            var shipper = testLogic.GetByID(int.Parse("a"));
 
             //Assert is handled by the exception.
         }
