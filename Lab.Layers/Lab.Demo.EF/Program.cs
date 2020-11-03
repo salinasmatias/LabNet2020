@@ -48,29 +48,35 @@ namespace Lab.Demo.EF
             #endregion
 
             #region Insert
-            var std = new Shipper()
+           /*var std = new Shipper()
             {
                 ShipperID = 4,
                 CompanyName = "Amazon",
                 Phone = "(503) 555-9999"
             };
-
-            //shippersLogic.Insert(std);
+            try 
+            {
+                shippersLogic.Insert(std);
+            }
+            catch (PhoneAreaCodeException e)
+            {
+                Console.WriteLine(e.Message);
+            }*/
             #endregion
 
             #region Update
-            /* using (var context = new NorthwindContext())
+            using (var context = new NorthwindContext())
              {
-                 var shipperToUpdate = context.Shippers.Find(4);
+                 var shipperToUpdate = context.Shippers.Find(6);
                  shipperToUpdate.CompanyName = "Neoris";
                  context.SaveChanges();
-             }*/
+             }
             #endregion
 
             #region Delete
-            /*var deleteShipper = shippersLogic.GetByID(4);
+            var deleteShipper = shippersLogic.GetByID(6);
             shippersLogic.Delete(deleteShipper);
-            */
+            
             #endregion
             Console.ReadKey(true);
         }

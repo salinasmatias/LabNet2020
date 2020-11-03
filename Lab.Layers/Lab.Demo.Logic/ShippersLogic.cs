@@ -35,6 +35,10 @@ namespace Lab.Demo.Logic
 
         public void Insert(Shipper Entity)
         {
+            if(Entity.Phone.Substring(0,5) != "(503)")
+            {
+                throw new PhoneAreaCodeException();
+            }
             this.context.Shippers.Add(Entity);
             this.context.SaveChanges();
         }
