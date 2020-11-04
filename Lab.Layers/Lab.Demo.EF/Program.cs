@@ -62,20 +62,22 @@ namespace Lab.Demo.EF
             {
                 Console.WriteLine(e.Message);
             }*/
+
+            //Las ID están configuradas con auto-increment desde la DB, por lo cual no importa que ID se ponga en ShipperID, el motor de la DB asignará ID automáticamente.
             #endregion
 
             #region Update
-            using (var context = new NorthwindContext())
+            /*using (var context = new NorthwindContext())
              {
                  var shipperToUpdate = context.Shippers.Find(6);
                  shipperToUpdate.CompanyName = "Neoris";
                  context.SaveChanges();
-             }
+             }*/
             #endregion
 
             #region Delete
-            var deleteShipper = shippersLogic.GetByID(6);
-            shippersLogic.Delete(deleteShipper);
+            //var deleteShipper = shippersLogic.GetByID(6);
+            //shippersLogic.Delete(deleteShipper);
             
             #endregion
             Console.ReadKey(true);
