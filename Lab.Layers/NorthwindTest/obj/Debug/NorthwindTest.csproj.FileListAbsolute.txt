@@ -51,3 +51,11 @@ C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\obj\Debug\NorthwindTe
 C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\NorthwindTest.dll.config
 C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\Castle.Core.dll
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\Moq.dll
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\Castle.Core.xml
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\Moq.xml
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kerne\Desktop\LabNet2020\Lab.Layers\NorthwindTest\bin\Debug\System.Threading.Tasks.Extensions.xml

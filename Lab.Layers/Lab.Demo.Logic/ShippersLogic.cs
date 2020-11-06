@@ -16,7 +16,7 @@ namespace Lab.Demo.Logic
             return this.context.Shippers.ToList();
         }
 
-        public Shipper GetByID(int id) 
+        public virtual Shipper GetByID(int id) 
         {
             try
             {

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using Lab.Demo.Data;
 using Lab.Demo.Entities;
 using Lab.Demo.Logic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace NorthwindTest
 {
@@ -42,7 +45,34 @@ namespace NorthwindTest
             List<Shipper> testList = testlogic.GetAll();
 
             //Assert
-            CollectionAssert.AllItemsAreNotNull(testList);
+            Assert.IsInstanceOfType(testList, typeof(List<Shipper>));
+        }
+
+        [TestMethod]
+        public void TestGetByID_Success()
+        {
+            //Arrange
+            Shipper actual = new Shipper()
+            {
+                ShipperID = 1,
+                CompanyName = "Test Shipper",
+                Phone = "(503) 555-5588"
+            };
+            Shipper expected = new Shipper()
+            {
+                ShipperID = 1,
+                CompanyName = "Test Shipper",
+                Phone = "(503) 555-5588"
+            };
+            Mock<ShippersLogic> mockShippersLogic = new Mock<ShippersLogic>();
+
+            //Action
+            mockShippersLogic.Setup(x => x.GetByID(actual.ShipperID)).Returns(actual);
+                
+            //Assert
+            Assert.AreEqual(expected.ShipperID, mockShippersLogic.Object.GetByID(1).ShipperID);
+            Assert.AreEqual(expected.CompanyName, mockShippersLogic.Object.GetByID(1).CompanyName);
+            Assert.AreEqual(expected.Phone, mockShippersLogic.Object.GetByID(1).Phone);
         }
     }
 }

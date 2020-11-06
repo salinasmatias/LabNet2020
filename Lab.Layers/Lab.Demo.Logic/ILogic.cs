@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab.Demo.Logic
 {
-    interface ILogic<T>
+    public interface ILogic<T>
     {
         List<T> GetAll();
         T GetByID(int id);
