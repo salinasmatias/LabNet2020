@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="StyleSheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <h1>CONTACTO</h1>
     <p>Completa tus datos</p> 
+    <section id = "form">
     <form>
         <label>
-            Nombre:
-            <input type="text" class="nombre" placeholder="Ingresa tu nombre" required>
+            Nombre: <span id="error-name"></span>
+            <input type="text" class="nombre" placeholder="Ingresa tu nombre" id="nombre">
         </label>
         <label>
-            Apellido:
-            <input type="text" class="apellido" placeholder="Ingresa tu apellido" required>
+            Apellido: <span id="error-lastname"></span>
+            <input type="text" class="apellido" placeholder="Ingresa tu apellido">
         </label>
         <label>
             Edad:
-            <input type="text" class= "edad" placeholder=" Ingresa tu edad" required>
+            <input type="text" class= "edad" placeholder=" Ingresa tu edad">
         </label>
         <p>
             <label class="botones">
-                <p><input type="radio" name="Masculino">Masculino</p>
-                <p><input type="radio" name="Femenino">Femenino</p>
-                <p><input type="radio" name="Otro">Otro</p>
+                <p><input type="radio" name="genero">Masculino</p>
+                <p><input type="radio" name="genero">Femenino</p>
+                <p><input type="radio" name="genero">Otro</p>
             </label>
         </p>
         <p>Información Adicional:</p>
         Empresa:
         <input type="text" class="empresa">
-        <button type="submit">submit</button>
+        <button type="submit" class="submit">submit</button>
     </form>
+    </section>
 </body>
 </html>
