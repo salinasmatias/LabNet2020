@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 .nombre, .apellido, .edad, .empresa{
     display: block;
     border: 2px solid;
@@ -18,24 +24,60 @@
 }
 
 body{
-    background-color: lightseagreen
+    background-color: lightseagreen;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 form{
     display: inline-block;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 5px;
-    background-color: lightseagreen;
+    background-color: white;
     border: black;
+    padding: 30px 40px;	
 }
 
-.submit{
-    border: 2px solid;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin: 0.25rem;
-    min-width: 125px;
-    padding: 0.5rem;
-    transition: border-color 0.5s ease-out;
+form label{
     display: inline-block;
+	margin-bottom: 5px;
+}
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header{
+    border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2{
+    margin: 0;
+}
+
+.submit, .clear{
+    background-color: lightseagreen;
+	border: 2px solid lightseagreen;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
 }

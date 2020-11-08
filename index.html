@@ -9,34 +9,39 @@
    <script src="main.js"></script>
 </head>
 <body>
-    <h1>CONTACTO</h1>
-    <p>Completa tus datos</p> 
-    <section id = "form">
-    <form>
-        <label>
-            Nombre: <span id="error-name"></span>
-            <input type="text" class="nombre" placeholder="Ingresa tu nombre" id="nombre">
-        </label>
-        <label>
-            Apellido: <span id="error-lastname"></span>
-            <input type="text" class="apellido" placeholder="Ingresa tu apellido">
-        </label>
-        <label>
-            Edad:
-            <input type="text" class= "edad" placeholder=" Ingresa tu edad" id="edad">
-        </label>
-        <p>
-            <label class="botones">
-                <p><input type="radio" name="genero">Masculino</p>
-                <p><input type="radio" name="genero">Femenino</p>
-                <p><input type="radio" name="genero">Otro</p>
+    <div class="container">
+        <div class="header">
+            <h2>CONTACTO</h2>
+        </div>
+        <p>Completa tus datos</p> 
+        <section id = "form">
+        <form>
+            <label>
+                Nombre: <span id="error-name"></span>
+                <input type="text" class="nombre" placeholder="Ingresa tu nombre" id="nombre">
             </label>
-        </p>
-        <p>Información Adicional:</p>
-        Empresa:
-        <input type="text" class="empresa">
-        <button type="submit" class="submit">submit</button>
-    </form>
-    </section>
+            <label>
+                Apellido: <span id="error-lastname"></span>
+                <input type="text" class="apellido" placeholder="Ingresa tu apellido">
+            </label>
+            <label>
+                Edad:
+                <input type="text" class= "edad" placeholder=" Ingresa tu edad" id="edad">
+            </label>
+            <p>
+                <label class="botones">
+                    <p><input type="radio" name="genero">Masculino</p>
+                    <p><input type="radio" name="genero">Femenino</p>
+                    <p><input type="radio" name="genero">Otro</p>
+                </label>
+            </p>
+            <p>Información Adicional:</p>
+            Empresa:
+            <input type="text" class="empresa">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="clear">Clear</button>
+        </form>
+        </section>
+    </div>
 </body>
 </html>
