@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Demo.EF", "Lab.Demo.EF\Lab.Demo.EF.csproj", "{C00E72EF-F9C9-4E4E-9292-8878E2C422DB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Demo.Logic", "Lab.Demo.Logic\Lab.Demo.Logic.csproj", "{DAD7AC19-9192-4B33-8743-1672E5CA8A39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Demo.Data", "Lab.Demo.Data\Lab.Demo.Data.csproj", "{9A65790B-FFE6-46D9-9846-130CB6C0E020}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C00E72EF-F9C9-4E4E-9292-8878E2C422DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C00E72EF-F9C9-4E4E-9292-8878E2C422DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C00E72EF-F9C9-4E4E-9292-8878E2C422DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C00E72EF-F9C9-4E4E-9292-8878E2C422DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DAD7AC19-9192-4B33-8743-1672E5CA8A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DAD7AC19-9192-4B33-8743-1672E5CA8A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD7AC19-9192-4B33-8743-1672E5CA8A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
