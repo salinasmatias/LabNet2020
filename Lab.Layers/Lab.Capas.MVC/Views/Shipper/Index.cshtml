@@ -1,0 +1,23 @@
+﻿@model List<Lab.Capas.MVC.Models.ShipperView>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class= "table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Company</th>
+        <th>Phone</th>
+    </tr>
+    @foreach(var Shipper in Model)
+    {
+        <tr>
+            <td>@Shipper.ShipperID</td>
+            <td>@Shipper.CompanyName</td>
+            <td>@Shipper.Phone</td>
+        </tr>
+    }
+</table>
