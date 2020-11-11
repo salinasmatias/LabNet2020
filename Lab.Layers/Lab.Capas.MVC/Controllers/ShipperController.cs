@@ -44,5 +44,12 @@ namespace Lab.Capas.MVC.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Delete(int id)
+        {
+            var logic = new ShippersLogic();
+            logic.Delete(logic.GetByID(id));
+            return RedirectToAction("Index");
+        }
     }
 }
