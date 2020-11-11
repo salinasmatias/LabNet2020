@@ -19,7 +19,8 @@
             <td>@Shipper.ShipperID</td>
             <td>@Shipper.CompanyName</td>
             <td>@Shipper.Phone</td>
-            <td>@Html.ActionLink("Delete shipper", "Delete", new {id = Shipper.ShipperID }, new {@class = "btn btn-danger btn-lg", onclick = "return confirm('Are you sure you want to delete this shipper?');" })</td>
+            <td>@Html.ActionLink("Update shipper","Update", new {id = Shipper.ShipperID }, new {@class = "btn btn-success" }) 
+            @Html.ActionLink("Delete shipper", "Delete", new {id = Shipper.ShipperID }, new {@class = "btn btn-danger", onclick = "return confirm('Are you sure you want to delete this shipper?');" })</td>
         </tr>
     }
 </table>

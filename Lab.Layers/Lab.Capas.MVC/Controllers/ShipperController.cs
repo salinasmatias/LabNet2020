@@ -1,4 +1,5 @@
 ﻿using Lab.Capas.MVC.Models;
+using Lab.Demo.Data;
 using Lab.Demo.Entities;
 using Lab.Demo.Logic;
 using System;
@@ -49,6 +50,25 @@ namespace Lab.Capas.MVC.Controllers
         {
             var logic = new ShippersLogic();
             logic.Delete(logic.GetByID(id));
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Update()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public ActionResult Update(ShipperView shipper, int id)
+        {
+            var logic = new ShippersLogic();
+            var shipperEntity = new Shipper()
+            {
+                ShipperID = id,
+                CompanyName = shipper.CompanyName,
+                Phone = shipper.Phone
+            };
+            logic.Update(shipperEntity);
             return RedirectToAction("Index");
         }
     }

@@ -48,5 +48,13 @@ namespace Lab.Demo.Logic
             this.context.Shippers.Remove(Entity);
             this.context.SaveChanges();
         }
+
+        public void Update(Shipper Entity)
+        {
+            var shippertoUpdate = this.context.Shippers.Find(Entity.ShipperID);
+            shippertoUpdate.CompanyName = Entity.CompanyName;
+            shippertoUpdate.Phone = Entity.Phone;
+            context.SaveChanges();
+        }
     }
 }

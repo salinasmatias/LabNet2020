@@ -172,6 +172,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shipper\Index.cshtml" />
     <Content Include="Views\Shipper\Insert.cshtml" />
+    <Content Include="Views\Shipper\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -190,6 +191,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Lab.Demo.Data\Lab.Demo.Data.csproj">
+      <Project>{9A65790B-FFE6-46D9-9846-130CB6C0E020}</Project>
+      <Name>Lab.Demo.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lab.Demo.Entities\Lab.Demo.Entities.csproj">
       <Project>{82a94b83-5fd4-48e7-bb1d-a33c8c61f4fa}</Project>
       <Name>Lab.Demo.Entities</Name>
