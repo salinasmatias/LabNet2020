@@ -1,4 +1,5 @@
 ﻿using Lab.Capas.MVC.Models;
+using Lab.Demo.Entities;
 using Lab.Demo.Logic;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,25 @@ namespace Lab.Capas.MVC.Controllers
                                                   Phone = shipper.Phone
                                               }).ToList();
             return View(shipperViews);
+        }
+
+        public ActionResult Insert()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Insert(ShipperView shipper)
+        {
+            var logic = new ShippersLogic();
+            var shipperEntity = new Shipper()
+            {
+                CompanyName = shipper.CompanyName,
+                Phone = shipper.Phone
+            };
+            logic.Insert(shipperEntity);
+
+            return RedirectToAction("Index");
         }
     }
 }

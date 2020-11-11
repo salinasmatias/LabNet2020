@@ -1,10 +1,10 @@
 ﻿@model List<Lab.Capas.MVC.Models.ShipperView>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Shipper Index";
 }
 
-<h2>Index</h2>
+<h2>Shippers</h2>
 
 <table class= "table table-hover">
     <tr>
@@ -21,3 +21,4 @@
         </tr>
     }
 </table>
+<div>@Html.ActionLink("Insert new shipper in table", "Insert", "Shipper")</div>
