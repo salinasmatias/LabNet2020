@@ -53,18 +53,18 @@ namespace Lab.Capas.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Update()
+        public ActionResult Update(int id)
         {
-            return View();
+            return View(new ShipperView() {ShipperID = id });
         }
         
         [HttpPost]
-        public ActionResult Update(ShipperView shipper, int id)
+        public ActionResult Update(ShipperView shipper)
         {
             var logic = new ShippersLogic();
             var shipperEntity = new Shipper()
             {
-                ShipperID = id,
+                ShipperID = shipper.ShipperID,
                 CompanyName = shipper.CompanyName,
                 Phone = shipper.Phone
             };

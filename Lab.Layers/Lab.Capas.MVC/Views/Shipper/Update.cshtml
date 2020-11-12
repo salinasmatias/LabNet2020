@@ -7,6 +7,7 @@
 
 @using (Html.BeginForm("Update", "Shipper", FormMethod.Post))
 {
+    @Html.HiddenFor(s=>s.ShipperID)
     <div>Company Name: @Html.TextBoxFor(s => s.CompanyName, new { @class = "form-control" })</div>
     <div>Phone: @Html.TextBoxFor(s => s.Phone, new { @class = "form-control" })</div>
     <input type="submit" class="btn btn-success btn-lg" value="Save Changes" />
