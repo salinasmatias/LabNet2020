@@ -35,14 +35,24 @@ namespace Lab.Capas.MVC.Controllers
         [HttpPost]
         public ActionResult Insert(ShipperView shipper)
         {
-            var logic = new ShippersLogic();
-            var shipperEntity = new Shipper()
+            try
             {
-                CompanyName = shipper.CompanyName,
-                Phone = shipper.Phone
-            };
-            logic.Insert(shipperEntity);
+                var logic = new ShippersLogic();
+                var shipperEntity = new Shipper()
+                {
+                    CompanyName = shipper.CompanyName,
+                    Phone = shipper.Phone
+                };
+                logic.Insert(shipperEntity);
 
+                TempData["Success"] = "InsertSuccessful";
+            }
+
+            catch (PhoneAreaCodeException) 
+            {
+                TempData["Error"] = "InsertError";
+            }
+            
             return RedirectToAction("Index");
         }
 
@@ -50,6 +60,8 @@ namespace Lab.Capas.MVC.Controllers
         {
             var logic = new ShippersLogic();
             logic.Delete(logic.GetByID(id));
+
+            TempData["Success"] = "DeleteSuccessful";
             return RedirectToAction("Index");
         }
 
@@ -61,14 +73,24 @@ namespace Lab.Capas.MVC.Controllers
         [HttpPost]
         public ActionResult Update(ShipperView shipper)
         {
-            var logic = new ShippersLogic();
-            var shipperEntity = new Shipper()
+            try
             {
-                ShipperID = shipper.ShipperID,
-                CompanyName = shipper.CompanyName,
-                Phone = shipper.Phone
-            };
-            logic.Update(shipperEntity);
+                var logic = new ShippersLogic();
+                var shipperEntity = new Shipper()
+                {
+                    ShipperID = shipper.ShipperID,
+                    CompanyName = shipper.CompanyName,
+                    Phone = shipper.Phone
+                };
+                logic.Update(shipperEntity);
+                TempData["Success"] = "UpdateSuccessful";
+            }
+
+            catch (PhoneAreaCodeException)
+            {
+                TempData["Error"] = "UpdateError";
+            }
+            
             return RedirectToAction("Index");
         }
     }

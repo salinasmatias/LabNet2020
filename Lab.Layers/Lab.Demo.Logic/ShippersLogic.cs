@@ -51,6 +51,10 @@ namespace Lab.Demo.Logic
 
         public void Update(Shipper Entity)
         {
+            if (Entity.Phone.Substring(0, 5) != "(503)")
+            {
+                throw new PhoneAreaCodeException();
+            }
             var shippertoUpdate = this.context.Shippers.Find(Entity.ShipperID);
             shippertoUpdate.CompanyName = Entity.CompanyName;
             shippertoUpdate.Phone = Entity.Phone;
