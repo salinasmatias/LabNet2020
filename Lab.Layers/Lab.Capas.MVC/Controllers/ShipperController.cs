@@ -35,6 +35,9 @@ namespace Lab.Capas.MVC.Controllers
         [HttpPost]
         public ActionResult Insert(ShipperView shipper)
         {
+            if (!ModelState.IsValid)
+                return View("Insert");
+
             try
             {
                 var logic = new ShippersLogic();
