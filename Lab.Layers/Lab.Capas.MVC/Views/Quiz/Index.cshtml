@@ -1,0 +1,51 @@
+﻿@model IList<Lab.Capas.MVC.Models.Result>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Let's see how much you know about games!</h2>
+<h4 style="color:red";>You can refresh the page to get new random questions</h4>
+@if (TempData["UserScore"] == null)
+{
+    using (Html.BeginForm("GetScore", "Quiz", FormMethod.Post))
+    {
+        for (int i = 0; i < Model.Count; i++)
+        {
+            //if (bool.Parse(question.correct_answer))
+            <div>@Model[i].question.Replace("&quot;", "''") </div>
+            @Html.HiddenFor(q => q[i].question)
+            @Html.HiddenFor(q => q[i].correct_answer)
+            @Html.RadioButtonFor(q => q[i].userResponse, "True", new {@class = "radio-inline" })
+            <label>True</label>
+            @Html.RadioButtonFor(q => q[i].userResponse, "False", new {@class = "radio-inline" })
+            <label>False</label>
+            <br />
+            <br />
+        }
+        <input type="submit" class="btn btn-success btn-lg" value="Finish!" />
+    }
+}
+else
+{
+
+    <p>Correct answers: @TempData["UserScore"]</p>
+    <table class="table table-hover">
+        <tr>
+            <th>Question</th>
+            <th>Your answer</th>
+        </tr>
+
+        @foreach(var question in ((IList<Lab.Capas.MVC.Models.Result>)TempData["Results"]))
+        {
+            <tr>
+                <td>@question.question.Replace("&quot;", "''")</td>
+                <td>@question.userResponse</td>
+            </tr>
+         }
+    </table>
+}
+
+
+
+
+
