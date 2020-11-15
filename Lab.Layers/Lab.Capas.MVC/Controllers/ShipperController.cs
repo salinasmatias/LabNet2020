@@ -51,7 +51,11 @@ namespace Lab.Capas.MVC.Controllers
                 TempData["Success"] = "InsertSuccessful";
             }
 
-            catch (PhoneAreaCodeException) 
+            catch (PhoneAreaCodeException)
+            {
+                TempData["Error"] = "InsertError";
+            }
+            catch (ArgumentOutOfRangeException) 
             {
                 TempData["Error"] = "InsertError";
             }
@@ -93,7 +97,11 @@ namespace Lab.Capas.MVC.Controllers
             {
                 TempData["Error"] = "UpdateError";
             }
-            
+            catch (ArgumentOutOfRangeException)
+            {
+                TempData["Error"] = "InsertError";
+            }
+
             return RedirectToAction("Index");
         }
     }
