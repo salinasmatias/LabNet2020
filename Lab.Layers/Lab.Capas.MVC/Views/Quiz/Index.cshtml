@@ -12,10 +12,10 @@
         for (int i = 0; i < Model.Count; i++)
         {
             //if (bool.Parse(question.correct_answer))
-            <div>@Model[i].question.Replace("&quot;", "''") </div>
+            <div>@HttpUtility.HtmlDecode(Model[i].question)</div>
             @Html.HiddenFor(q => q[i].question)
             @Html.HiddenFor(q => q[i].correct_answer)
-            @Html.RadioButtonFor(q => q[i].userResponse, "True", new {@class = "radio-inline" })
+            @Html.RadioButtonFor(q => q[i].userResponse, "True", new {@class = "radio-inline", required = "required" })
             <label>True</label>
             @Html.RadioButtonFor(q => q[i].userResponse, "False", new {@class = "radio-inline" })
             <label>False</label>
@@ -28,7 +28,7 @@
 else
 {
 
-    <p>Correct answers: @TempData["UserScore"]</p>
+    <h3>Correct answers: @TempData["UserScore"]</h3>
     <table class="table table-hover">
         <tr>
             <th>Question</th>
@@ -38,8 +38,16 @@ else
         @foreach(var question in ((IList<Lab.Capas.MVC.Models.Result>)TempData["Results"]))
         {
             <tr>
-                <td>@question.question.Replace("&quot;", "''")</td>
-                <td>@question.userResponse</td>
+                <td>@HttpUtility.HtmlDecode(question.question)</td>
+                @if (question.userResponse == "Correct")
+                {
+                    <td class="success">@question.userResponse</td>
+                }
+                else
+                {
+                    <td class="danger">@question.userResponse</td>
+                }
+
             </tr>
          }
     </table>

@@ -32,7 +32,7 @@ namespace Lab.Capas.MVC.Controllers
                 }
                 else
                 {
-                    question.userResponse = "wrong";
+                    question.userResponse = "Wrong";
                 }
             }
             TempData["UserScore"] = correctAnswers;
